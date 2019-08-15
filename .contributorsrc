@@ -1,0 +1,27 @@
+{
+  "projectName": "reasoning_rock",
+  "projectOwner": "keithturnerb",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 80,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "keithturnerb",
+      "name": "Keith Turner",
+      "avatar_url": "https://github.com/keithturnerb.com",
+      "profile": "https://github.com/keithturnerb.com",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "review",
+        "test"
+      ]
+    },
+  ],
+  "contributorsPerLine": 8
+}
