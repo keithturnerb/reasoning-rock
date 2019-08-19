@@ -7,22 +7,40 @@
  *
  */
 
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React from 'react'
+import { Switch, Route, Redirect } from 'react-router-dom'
+import styled from 'styled-components'
 
-import HomePage from 'containers/HomePage/Loadable';
-import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import NavOverlayMenu from '../../components/NavOverlayMenu'
+import HomePage from 'containers/HomePage/Loadable'
+import NotFoundPage from 'containers/NotFoundPage/Loadable'
 
-import GlobalStyle from '../../global-styles';
+import GlobalStyle from '../../global-styles'
+
+const AppWrapper = styled.div`
+  max-width: calc(1200px + 16px * 2);
+  margin: 0 auto;
+  display: flex;
+  min-height: 100%;
+  padding: 0 16px;
+  flex-direction: column;
+`
 
 export default function App() {
   return (
-    <div>
+    <AppWrapper>
+      <GlobalStyle />
+      <NavOverlayMenu />
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path='/' component={HomePage} />
+        <Route path='/home'>
+          <Redirect to='/' />
+        </Route>
         <Route component={NotFoundPage} />
       </Switch>
-      <GlobalStyle />
-    </div>
-  );
+    </AppWrapper>
+  )
 }
+
+//  <Route path='/services' component={Services} />
+// <Route path='/contact' component={Contact} />

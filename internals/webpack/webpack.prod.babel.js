@@ -16,6 +16,18 @@ module.exports = require('./webpack.base.babel')({
     path.join(process.cwd(), 'app/app.js'),
   ],
 
+    // ADDED for component libraries will be optimized
+    // For Optimization: DO NOT ADD STYLESHEET TO HTML OR app.js!!
+    babelQuery: {
+      plugins: [
+        // ['import', { libraryName: 'antd', style: 'css' }],  // only if 'antd' component library is needed, 
+        [
+          'transform-semantic-ui-react-imports',
+          { addCssImports: true, importMinifiedCssFiles: true },
+        ],
+      ],
+    },
+
   // Utilize long-term caching by adding content hashes (not compilation hashes) to compiled assets
   output: {
     filename: '[name].[chunkhash].js',

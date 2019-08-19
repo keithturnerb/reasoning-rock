@@ -17,6 +17,17 @@ module.exports = require('./webpack.base.babel')({
     path.join(process.cwd(), 'app/app.js'), // Start with js/app.js
   ],
 
+  // ADDED SO THAT ANTD WILL OPTIMIZE CSS MODULES
+  babelQuery: {
+    plugins: [
+      // ['import', { libraryName: 'antd', style: 'css' }],
+      [
+        'transform-semantic-ui-react-imports',
+        { addCssImports: true, importMinifiedCssFiles: true },
+      ],
+    ],
+  },
+  
   // Don't use hashes in dev mode for better performance
   output: {
     filename: '[name].js',

@@ -14,6 +14,8 @@
 - *Change format __(Desciption of _'what'_ significant changes for the release)__*
 #### Effects
 - *Effects format __(Desciption of _'why'_ for the release change(s))__*
+#### Support - Optional
+- *Support format __Supporting documentation when available, ie log_header__*
 
 ## RELEASES
 
@@ -22,7 +24,7 @@
 #### Version
 - ver_00.01 (@keithturnerb)
 #### Change
-- initial commit
+- initial commit from clean react boilerplate
 #### Effects
 - Project Kickoff
 
@@ -32,6 +34,18 @@
 - ver_00.02
 #### Change
 - Added semantic-ui css `babel-loader` to `Webpack base config` file (@keithturnerb)
+#### Effects
+- Configuration
+  - include `tbd`
+- Optimization 
+  -  include `optimized code for use with semantic-ui-react by elimating semantic-ui dependencies with babel loader`(@keithturnerb)
+
+### Date
+2019 Aug 15 
+#### Version
+- ver_00.02
+#### Change
+- 
 #### Effects
 - Configuration
   - include `tbd`
