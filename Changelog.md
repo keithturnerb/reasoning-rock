@@ -63,3 +63,4 @@
   - include `na`
 - Optimization 
   -  include `linked account with repo on my new awesome Ubuntu 18.0x. only 1 os crash so far, wow`(@keithturnerb)
+  -  include `optimized code for use with semantic-ui-react by elimating semantic-ui dependencies with babel loader`(@keithturnerb)
