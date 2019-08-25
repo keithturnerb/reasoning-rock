@@ -5,14 +5,26 @@
  *
  */
 
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import React from 'react'
+import { FormattedMessage } from 'react-intl'
+import messages from './messages'
+// import HomeWrapper from './HomeWrapper'
+import HeaderBackground from './HeaderBackground'
+import Header from '../../components/Header/Loadable'
+import SocialGroup from '../../components/SocialGroup/Loadable'
 
 export default function HomePage() {
   return (
-    <h1>
-      <FormattedMessage {...messages.header} />
-    </h1>
-  );
+    <div>
+      <div className='home-header'>
+        <HeaderBackground>
+          <Header />
+        </HeaderBackground>
+      </div>
+      <section>
+        <SocialGroup />
+        <FormattedMessage {...messages.header} />
+      </section>
+    </div>
+  )
 }
