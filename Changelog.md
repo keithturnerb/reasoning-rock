@@ -43,11 +43,26 @@
 ### Date
 2019 Aug 15 
 #### Version
-- ver_00.02
+- ver_00.03
 #### Change
 - 
 #### Effects
 - Configuration
-  - include `tbd`
+  - include ``
+- Optimization 
+  -  include `config debug for editor and a few others in code`(@keithturnerb)
+
+  ### Date
+2019 Aug 31
+#### Version
+- ver_00.04
+#### Change
+- 
+#### Effects
+- Configuration
+
 - Optimization 
   -  include `optimized code for use with semantic-ui-react by elimating semantic-ui dependencies with babel loader`(@keithturnerb)
+
+
+  

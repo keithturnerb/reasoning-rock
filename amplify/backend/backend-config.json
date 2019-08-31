@@ -1,0 +1,11 @@
+{
+	"api": {
+		"ApiArchitecture": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "API_KEY"
+			}
+		}
+	}
+}
