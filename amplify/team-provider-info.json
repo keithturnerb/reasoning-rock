@@ -1,0 +1,14 @@
+{
+  "production": {
+    "awscloudformation": {
+      "AuthRoleName": "reasoningrockwebsite-production-20190901004740-authRole",
+      "UnauthRoleArn": "arn:aws:iam::032327938464:role/reasoningrockwebsite-production-20190901004740-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::032327938464:role/reasoningrockwebsite-production-20190901004740-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "reasoningrockwebsite-production-20190901004740-deployment",
+      "UnauthRoleName": "reasoningrockwebsite-production-20190901004740-unauthRole",
+      "StackName": "reasoningrockwebsite-production-20190901004740",
+      "StackId": "arn:aws:cloudformation:us-east-2:032327938464:stack/reasoningrockwebsite-production-20190901004740/a170f270-cc73-11e9-8950-024d9c0f9898"
+    }
+  }
+}
