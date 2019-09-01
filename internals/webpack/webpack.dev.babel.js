@@ -2,10 +2,10 @@
  * DEVELOPMENT WEBPACK CONFIGURATION
  */
 
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CircularDependencyPlugin = require('circular-dependency-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CircularDependencyPlugin = require('circular-dependency-plugin')
 
 module.exports = require('./webpack.base.babel')({
   mode: 'development',
@@ -27,7 +27,7 @@ module.exports = require('./webpack.base.babel')({
       ],
     ],
   },
-  
+
   // Don't use hashes in dev mode for better performance
   output: {
     filename: '[name].js',
@@ -53,7 +53,7 @@ module.exports = require('./webpack.base.babel')({
     }),
   ],
 
-  // Emit a source map for easier debugging 
+  // Emit a source map for easier debugging
   // See https://webpack.js.org/configuration/devtool/#devtool
   /**
    * **Changed below to fix an issue with VS Code mapping. see debugging.md for more details**
@@ -65,4 +65,4 @@ module.exports = require('./webpack.base.babel')({
   performance: {
     hints: false,
   },
-});
+})

@@ -18,7 +18,7 @@ import NavOverlayMenu from '../../components/NavOverlayMenu'
 import GlobalStyle from '../../global-styles'
 
 const AppWrapper = styled.div`
-  max-width: calc(1200px + 16px * 2);
+  max-width: calc(1400px + 16px * 2);
   margin: 0 auto;
   display: flex;
   min-height: 100%;

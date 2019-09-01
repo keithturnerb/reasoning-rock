@@ -1,5 +1,7 @@
 {
   "files.eol": "\n",
   "prettier.eslintIntegration": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.preferences.importModuleSpecifier": "non-relative"
 }

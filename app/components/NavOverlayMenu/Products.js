@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { Icon } from 'semantic-ui-react'
 
 const google = 'https://google.com'
@@ -32,7 +32,7 @@ const LisItemHeadingText = styled.div`
   margin-left: 10px;
 `
 const ListItemHeading = styled.div`
-  margin: 0 -5em 0 5em;
+  margin: 0 -5em 0 1em;
   color: #6772e5;
   font-size: 16px;
   line-height: 22px;
@@ -44,32 +44,11 @@ const Products = () => (
   <ListContainer>
     <List>
       <li>
-        <Link to='/contact'>
-          <ListItemContent>
-            <Icon
-              link
-              name='world'
-              size='tiny'
-              src={google} /* width={48} height={48} */
-            />
-            <LisItemHeadingText>
-              <ListItemHeading>PAYMENTS</ListItemHeading>
-              <div>A complete payments platform engineered.</div>
-            </LisItemHeadingText>
-          </ListItemContent>
-        </Link>
-      </li>
-      <li>
         <ListItemContent>
-          <Icon
-            link
-            name='world'
-            src={google}
-            size='tiny' /* width={48} height={48} */
-          />
+          <Icon link name='world' size='tiny' src={google} />
           <LisItemHeadingText>
-            <ListItemHeading>BILLING</ListItemHeading>
-            <div>Build and scale your recurring business model.</div>
+            <ListItemHeading>LIFE TRANSFORMATION</ListItemHeading>
+            <div>Let us meet and discuss options</div>
           </LisItemHeadingText>
         </ListItemContent>
       </li>
@@ -82,8 +61,22 @@ const Products = () => (
             size='tiny' /* width={48} height={48} */
           />
           <LisItemHeadingText>
-            <ListItemHeading>CONNECT</ListItemHeading>
-            <div>Everything platforms need to get sellers paid.</div>
+            <ListItemHeading>UNCLE OPTIONS</ListItemHeading>
+            <div>Absolute must for any Modern Website</div>
+          </LisItemHeadingText>
+        </ListItemContent>
+      </li>
+      <li>
+        <ListItemContent>
+          <Icon
+            link
+            name='world'
+            src={google}
+            size='tiny' /* width={48} height={48} */
+          />
+          <LisItemHeadingText>
+            <ListItemHeading>QUESTIONS STILL?</ListItemHeading>
+            <div>Sounds absolutely amazing intern in route</div>
           </LisItemHeadingText>
         </ListItemContent>
       </li>

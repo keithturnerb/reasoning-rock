@@ -1,11 +1,11 @@
 // Important modules this config uses
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackPwaManifest = require('webpack-pwa-manifest');
-const OfflinePlugin = require('offline-plugin');
-const { HashedModuleIdsPlugin } = require('webpack');
-const TerserPlugin = require('terser-webpack-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const WebpackPwaManifest = require('webpack-pwa-manifest')
+const OfflinePlugin = require('offline-plugin')
+const { HashedModuleIdsPlugin } = require('webpack')
+const TerserPlugin = require('terser-webpack-plugin')
+const CompressionPlugin = require('compression-webpack-plugin')
 
 module.exports = require('./webpack.base.babel')({
   mode: 'production',
@@ -16,17 +16,17 @@ module.exports = require('./webpack.base.babel')({
     path.join(process.cwd(), 'app/app.js'),
   ],
 
-    // ADDED for component libraries will be optimized
-    // For Optimization: DO NOT ADD STYLESHEET TO HTML OR app.js!!
-    babelQuery: {
-      plugins: [
-        // ['import', { libraryName: 'antd', style: 'css' }],  // only if 'antd' component library is needed, 
-        [
-          'transform-semantic-ui-react-imports',
-          { addCssImports: true, importMinifiedCssFiles: true },
-        ],
+  // ADDED for component libraries will be optimized
+  // For Optimization: DO NOT ADD STYLESHEET TO HTML OR app.js!!
+  babelQuery: {
+    plugins: [
+      // ['import', { libraryName: 'antd', style: 'css' }],  // only if 'antd' component library is needed,
+      [
+        'transform-semantic-ui-react-imports',
+        { addCssImports: true, importMinifiedCssFiles: true },
       ],
-    },
+    ],
+  },
 
   // Utilize long-term caching by adding content hashes (not compilation hashes) to compiled assets
   output: {
@@ -69,8 +69,8 @@ module.exports = require('./webpack.base.babel')({
           name(module) {
             const packageName = module.context.match(
               /[\\/]node_modules[\\/](.*?)([\\/]|$)/,
-            )[1];
-            return `npm.${packageName.replace('@', '')}`;
+            )[1]
+            return `npm.${packageName.replace('@', '')}`
           },
         },
       },
@@ -159,4 +159,4 @@ module.exports = require('./webpack.base.babel')({
     assetFilter: assetFilename =>
       !/(\.map$)|(^(main\.|favicon\.))/.test(assetFilename),
   },
-});
+})

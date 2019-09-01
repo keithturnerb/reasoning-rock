@@ -40,20 +40,20 @@ const Company = () => (
   <List>
     <ListItem>
       <StyledLink href='http://reactjunkie.com'>
-        <Icon link name='globe' size='tiny' src={google} />
+        <Icon link name='globe' size='small' src={google} />
         <Heading>ABOUT ME</Heading>
       </StyledLink>
     </ListItem>
     <ListItem>
-      <Icon link name='globe' size='tiny' src={google} />
+      <Icon link name='globe' size='small' src={google} />
       <Heading>CUSTOMERS</Heading>
     </ListItem>
     <ListItem>
-      <Icon name='globe' size='tiny' src={google} />
+      <Icon name='globe' size='small' src={google} />
       <Heading>JOBS</Heading>
     </ListItem>
     <ListItem>
-      <Icon link name='globe' size='tiny' src={google} />
+      <Icon link name='globe' size='small' src={google} />
       <Heading>ENVIRONMENT</Heading>
     </ListItem>
   </List>
