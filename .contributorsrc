@@ -2,12 +2,13 @@
   "projectName": "reasoning_rock",
   "projectOwner": "keithturnerb",
   "repoType": "github",
-  "repoHost": "https://github.com",
+  "repoHost": "https://github.com/keithturnerb/reasoning_rock",
   "files": [
+    "Changelog.md"
     "README.md"
   ],
   "imageSize": 80,
-  "commit": true,
+  "commit": tbd,
   "contributors": [
     {
       "login": "keithturnerb",
@@ -15,11 +16,8 @@
       "avatar_url": "https://github.com/keithturnerb.com",
       "profile": "https://github.com/keithturnerb.com",
       "contributions": [
-        "code",
-        "doc",
-        "ideas",
-        "review",
-        "test"
+        "baseline-structure",
+        "inititial-app"
       ]
     },
   ],

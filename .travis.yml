@@ -1,3 +1,13 @@
+/*
+** Initial development used both a windows/bash OS and Linux OS
+** To continue to have the ability to develop using Linux, please
+** do not remove this file. If project is to be deprecated with
+** single developer to maintain && Linux not used, it can be removed
+*/
+
+
+
+
 language: node_js
 
 node_js:
@@ -16,8 +26,9 @@ before_install:
 
 notifications:
   email:
-    on_failure: change
-
+    on_failure: 'https://keithturnerb@gmail.com'
+    on_success: 'https://keithturnerb@gmail.com'
+    
 after_success: 'npm run coveralls'
 
 cache:
