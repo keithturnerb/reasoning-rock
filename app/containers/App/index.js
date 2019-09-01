@@ -11,9 +11,9 @@ import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import styled from 'styled-components'
 
-import NavOverlayMenu from '../../components/NavOverlayMenu'
 import HomePage from 'containers/HomePage/Loadable'
 import NotFoundPage from 'containers/NotFoundPage/Loadable'
+import NavOverlayMenu from '../../components/NavOverlayMenu'
 
 import GlobalStyle from '../../global-styles'
 
