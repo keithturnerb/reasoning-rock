@@ -60,13 +60,22 @@
 - 
 #### Effects
 - Configuration
-
-- Optimization 
-  -  include `optimized code for use with semantic-ui-react by elimating semantic-ui dependencies with babel loader`(@keithturnerb)
-
-
-  
   - include `na`
 - Optimization 
   -  include `linked account with repo on my new awesome Ubuntu 18.0x. only 1 os crash so far, wow`(@keithturnerb)
   -  include `optimized code for use with semantic-ui-react by elimating semantic-ui dependencies with babel loader`(@keithturnerb)
+
+  ### Date
+2019 Aug 30
+#### Version
+- ver_00.04
+#### Change
+- Configuration
+- Optimization 
+  -  include `adfcf3414a51888fcb6bc93127dc9b3503e801d9`(@keithturnerb)
+    -  include `added aws services and configurations, will check by loading to cloud on aws now`(@keithturnerb)
+#### Effects
+- first build created, no issues
+- added cloud ec2-east 1 configuration files
+- added graphql setup api for aws dynamodb to be used website communication portal
+- and if successful, add domain to the website on the cloud
