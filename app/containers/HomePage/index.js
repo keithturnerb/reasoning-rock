@@ -31,41 +31,69 @@ export default function HomePage() {
             style={{
               margin: '1em 1em -1em 1em',
               backgroundColor: '#000000ff',
-              borderBottom: '1px solid red',
+              borderBottom: '3px solid red',
             }}
           >
             <Grid.Column>
               <Segment basic textAlign='center'>
                 <Header inverted as='h2' style={{ color: '#ccaa00ff' }}>
-                  WELCOME ALL TO MY NEW WEBSITE! INCOMPLETE BY NECESSITY
+                  WELCOME TO NEW MY NEW DEVELOPMENT WEBSITE!
                 </Header>
-                <Header inverted as='h3'>
-                  NO AUTH, LIMITED TIME ALL DEV ACCESS, ALL INVITED, EVEN PEOPLE
+                <Header inverted as='h5'>
+                  NO AUTH ACCESS (FOR NOW), ALL INVITED, EVEN PEOPLE
                 </Header>
                 <Header inverted as='h4'>
-                  SITE IS MY<i> PRE-ELUCUBRATION EXPERIENCE</i>
-                  <b> GOAL OF SHAREING CUTTING EDGE USAGE AND CODE</b>
+                  MY <i> PRE-ELUCUBRATION EXPERIENCE</i>
+                  <b> BRINGING MY EXPERIENCE TO SHARE</b>
                 </Header>
               </Segment>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Column
-            style={{ margin: '1em 1em 1em 1em', backgroundColor: '#bbbbbbff' }}
-          >
-            <Segment
-              textAlign='center'
-              basic
-              style={{ backgroundColor: 'transparent' }}
+          <Grid.Row>
+            <Grid.Column
+              style={{
+                margin: '0em 1em -1em 1em',
+                backgroundColor: '#EEEEEEff',
+              }}
             >
-              <h2>
-                BY PR10R1TY && L1NKS Hh2IGHLIGHTING FUTURE @dds t0 TH1S S1T3
-              </h2>
-              <h2>
-                Directional love for this Shift? Tell me soon with API release
-                as soon as 3weeks, so juiced for comments
-              </h2>
-            </Segment>
-          </Grid.Column>
+              <Segment
+                textAlign='center'
+                basic
+                style={{ backgroundColor: 'transparent' }}
+              >
+                <h2>T0D0 PR10R1TY && L1NKS Hh2IGHLIGHTING @dds b3l0w</h2>
+                <h4>
+                  Hate it? Directional love for this Shift? Tell w/comm next few
+                  weeks
+                </h4>
+              </Segment>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column
+              style={{
+                margin: '-1em 1em 0em 1em',
+                backgroundColor: '#ccaa00ff',
+                borderTop: '2px solid black',
+                borderBottom: '2px solid red',
+              }}
+            >
+              <Segment
+                textAlign='center'
+                basic
+                style={{ backgroundColor: 'transparent' }}
+              >
+                <h3>Currently at 15% complete, but foundation code at 90%</h3>
+                <h2>
+                  Check it out @
+                  <a href='https://github.com/keithturnerb/reasoning-rock'>
+                    GitHub
+                  </a>
+                </h2>
+                <h4>Links and Responsive updates soon, @609+px</h4>
+              </Segment>
+            </Grid.Column>
+          </Grid.Row>
           <Grid.Row
             style={{
               margin: '-1em 1em -1em 1em',

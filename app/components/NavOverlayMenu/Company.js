@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Icon } from 'semantic-ui-react'
 
-const google = 'https://google.com'
+const myEmail = 'https://keithturnerb@gmail.com'
 
 const List = styled.ul`
   display: flex;
@@ -39,21 +39,21 @@ const StyledLink = styled.a`
 const Company = () => (
   <List>
     <ListItem>
-      <StyledLink href='http://reactjunkie.com'>
-        <Icon link name='globe' size='small' src={google} />
+      <StyledLink href={myEmail}>
+        <Icon name='globe' size='small' />
         <Heading>ABOUT ME</Heading>
       </StyledLink>
     </ListItem>
     <ListItem>
-      <Icon link name='globe' size='small' src={google} />
+      <Icon link name='globe' size='small' src={myEmail} />
       <Heading>CUSTOMERS</Heading>
     </ListItem>
     <ListItem>
-      <Icon name='globe' size='small' src={google} />
+      <Icon name='globe' size='small' src={myEmail} />
       <Heading>JOBS</Heading>
     </ListItem>
     <ListItem>
-      <Icon link name='globe' size='small' src={google} />
+      <Icon link name='globe' size='small' src={myEmail} />
       <Heading>ENVIRONMENT</Heading>
     </ListItem>
   </List>

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Icon } from 'semantic-ui-react'
-const google = 'https://google.com'
+const myEmail = 'https://keithturnerb@gmail.com'
 
 const RootGrid = styled.div`
   display: grid;
@@ -73,7 +73,14 @@ const ListItem = styled.li`
 const developers = () => (
   <RootGrid>
     <DocoLogo>
-      <Icon link name='globe' size='tiny' src={google} width={24} height={24} />
+      <Icon
+        link
+        name='globe'
+        size='tiny'
+        src={myEmail}
+        width={24}
+        height={24}
+      />
     </DocoLogo>
     <HeadingText>
       <DocumentationHeading>DOCUMENTATION</DocumentationHeading>

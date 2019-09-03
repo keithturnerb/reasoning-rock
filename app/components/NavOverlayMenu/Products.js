@@ -3,7 +3,7 @@ import styled from 'styled-components'
 // import { Link } from 'react-router-dom'
 import { Icon } from 'semantic-ui-react'
 
-const google = 'https://google.com'
+const myEmail = 'https://keithturnerb@gmail.com'
 
 const ListContainer = styled.div`
   display: flex;
@@ -45,7 +45,7 @@ const Products = () => (
     <List>
       <li>
         <ListItemContent>
-          <Icon link name='world' size='tiny' src={google} />
+          <Icon link name='world' size='tiny' src={myEmail} />
           <LisItemHeadingText>
             <ListItemHeading>LIFE TRANSFORMATION</ListItemHeading>
             <div>Let us meet and discuss options</div>
@@ -57,7 +57,7 @@ const Products = () => (
           <Icon
             link
             name='world'
-            src={google}
+            src={myEmail}
             size='tiny' /* width={48} height={48} */
           />
           <LisItemHeadingText>
@@ -71,7 +71,7 @@ const Products = () => (
           <Icon
             link
             name='world'
-            src={google}
+            src={myEmail}
             size='tiny' /* width={48} height={48} */
           />
           <LisItemHeadingText>
